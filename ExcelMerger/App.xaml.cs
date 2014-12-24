@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExcelMerger.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +14,10 @@ namespace ExcelMerger
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnDeactivated(EventArgs e)
+        {
+            ConfigHelper.Save();
+            base.OnDeactivated(e);
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using ExcelMerger.ViewModels;
+﻿using ExcelMerger.Helpers;
+using ExcelMerger.ViewModels;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
@@ -27,7 +28,7 @@ namespace ExcelMerger
         public MainWindow()
         {
             // 取得ViewModel
-            _viewModel = new VMMain();
+            _viewModel = ConfigHelper.Config.Main;
 
             this.DataContext = _viewModel;
             InitializeComponent();

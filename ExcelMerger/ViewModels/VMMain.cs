@@ -35,8 +35,9 @@ namespace ExcelMerger.ViewModels
 
         public VMMain()
         {
-            BaseExcel = "";
-            MergedExcel = "";
+            BaseExcel = null;
+            MergedExcel = null;
+            DestExcel = null;
         }
     }
 }
