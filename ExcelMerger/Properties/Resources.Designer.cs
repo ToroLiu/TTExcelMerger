@@ -70,11 +70,29 @@ namespace ExcelMerger.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 瀏覽.
+        /// </summary>
+        public static string IDS_Browse {
+            get {
+                return ResourceManager.GetString("IDS_Browse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 取消.
         /// </summary>
         public static string IDS_Cancel {
             get {
                 return ResourceManager.GetString("IDS_Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 寫出結果.
+        /// </summary>
+        public static string IDS_Dest_Excel {
+            get {
+                return ResourceManager.GetString("IDS_Dest_Excel", resourceCulture);
             }
         }
         

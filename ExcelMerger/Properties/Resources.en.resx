@@ -131,4 +131,10 @@
   <data name="IDS_Merged_Excel" xml:space="preserve">
     <value>Merged Excel</value>
   </data>
+  <data name="IDS_Dest_Excel" xml:space="preserve">
+    <value>Result Excel</value>
+  </data>
+  <data name="IDS_Browse" xml:space="preserve">
+    <value>Browse</value>
+  </data>
 </root>

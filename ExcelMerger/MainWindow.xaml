@@ -23,14 +23,26 @@
         <wag:AutoGrid Grid.Row="0"
                       ChildMargin="5, 5"
                       ChildVerticalAlignment="Center"
-                      Columns="100,*"
-                      RowCount="2"
+                      Columns="120,*, 100"
+                      RowCount="3"
                       RowHeight="60">
             <Label Content="{x:Static prop:Resources.IDS_Base_Excel}" />
-            <TextBox Width="300" Text="{Binding BaseExcel}" />
+            <TextBox Width="300"
+                     IsReadOnly="True"
+                     Text="{Binding BaseExcel}" />
+            <Button Click="OnBtnBaseExcel_Clicked" Content="{x:Static prop:Resources.IDS_Browse}" />
 
             <Label Content="{x:Static prop:Resources.IDS_Merged_Excel}" />
-            <TextBox Width="300" Text="{Binding MergedExcel}" />
+            <TextBox Width="300"
+                     IsReadOnly="True"
+                     Text="{Binding MergedExcel}" />
+            <Button Click="OnBtnMergedExcel_Clicked" Content="{x:Static prop:Resources.IDS_Browse}" />
+
+            <Label Content="{x:Static prop:Resources.IDS_Dest_Excel}" />
+            <TextBox Width="300"
+                     IsReadOnly="True"
+                     Text="{Binding DestExcel}" />
+            <Button Click="OnBtnDestExcel_Clicked" Content="{x:Static prop:Resources.IDS_Browse}" />
         </wag:AutoGrid>
 
     </Grid>
